@@ -1,0 +1,8 @@
+.input {
+    display: flex;
+    justify-content: center;
+    
+}
+#BTN_Avg {
+    margin-top: 20px;
+}
