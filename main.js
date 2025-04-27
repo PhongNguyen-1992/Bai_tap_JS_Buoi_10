@@ -1,9 +1,10 @@
 let btn_tinh_luong = document.getElementById("btn_tinh_luong");
 btn_tinh_luong.onclick = function () {
     let Day = document.getElementById("Day").value * 1;
-    const Luong = 100000;
+    const Luong = 10000;
     let resuft = Day * Luong
-    let content = `<p>Lương Của Bạn Là : ${resuft}</p>`
+    let format_resuft = resuft.toLocaleString('vi-VN')
+    let content = `<p>Lương Của Bạn Là : ${format_resuft}</p>`
     let luong = document.getElementById("Tong_Luong");
     Tong_Luong.innerHTML = content
 
